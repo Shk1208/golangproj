@@ -1,0 +1,20 @@
+<h1>Hi, Welcome to your Money Manager</h1>
+
+<h3>Please Enter your Details:</h3>
+<form action="/Calculate" method="GET">
+    <label>Income</label><br>
+    <input type="text" name="income"><br>
+    <label>Expenditure</label><br>
+    <input type="text" name="expenditure"><br>
+    <label>Mode</label><br>
+    <input type="text" name="mode"><br>
+    <input type="submit" value="submit"></input>
+</form>
+
+<h3>Details of your expenditure</h3>
+<table border="1">
+    <tr><th>Income</th><th>Expenditure</th><th>Mode</th><th>Balance</th></tr>
+    {{range .}}
+        <tr><td>{{.Income}}</td><td>{{.Expenditure}}</td><td>{{.Mode}}</td><td>{{.Balance}}</td></tr>
+    {{end}}
+</table>

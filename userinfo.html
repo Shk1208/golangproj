@@ -1,0 +1,10 @@
+<h1>User Info Page</h1>
+
+<h3>Below are the details of the users:</h3>
+
+<table border="1">
+    <tr><th>Name</th><th>Email</th><th>Delete</th></tr>
+    {{range .}}
+        <tr><td>{{.Name}}</td><td>{{.Email}}</td><td href="/Delete?email={{.Email}}">Delete</td></tr>
+    {{end}}
+</table>

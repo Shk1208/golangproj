@@ -1,0 +1,21 @@
+<h1>Cash Memo App</h1>
+
+<h2>Log in for Admin</h2>
+<form action="/UserInfo" method="POST">
+    <label>Email:</label><br>
+    <input type="email" name="adminmail"><br>
+    <label>Password:</label><br>
+    <input type="password" name="adminpass"><br>
+    <input type="submit" value="sign in">
+</form>
+
+<h2>Log in for User</h2>
+<form action="/AuthUser" method="POST">
+    <label>Email:</label><br>
+    <input type="email" name="usermail"><br>
+    <label>Password:</label><br>
+    <input type="password" name="userpass"><br>
+    <input type="submit" value="sign in">
+</form>
+
+<button name="signup" href="/signup.html">Sign Up</button>

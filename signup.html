@@ -1,0 +1,15 @@
+<h1>Sign Up</h1>
+
+<form action="/Signup">
+    <label>Name:</label><br>
+    <input type="text" name="name"><br>
+    <label>Email:</label><br>
+    <input type="email" name="mail"><br>
+    <label>Password:</label><br>
+    <input type="password" name="pass"><br>
+    <input type="submit" value="sign up">
+</form>
+
+{{if .d}}
+    <h3>YOU HAVE SIGNED UP SUCCESSFULLY!!!</h3>
+{{end}}
